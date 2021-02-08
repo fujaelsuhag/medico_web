@@ -4,6 +4,29 @@
 }
 
 
+input:focus, button:focus, select{
+    box-shadow: none !important;
+}
+
+
+// Common title
+.common_title{
+    h3{
+        font-weight: 600;
+        font-size: 30px;
+        color: #00314a;
+        text-align: center;
+    }
+    span{
+        background-color: #00314a;
+        display: block;
+        width: 50px;
+        height: 4px;
+        margin: 0 auto 40px;
+    }
+}
+
+
 // Navigation section start
 .navigation{
     background-color: rgba(4, 29, 43, 0.7);
@@ -99,7 +122,7 @@
             font-size: 25px;
             font-weight: 600;
         }
-        input{
+        input, select{
             font-size: 16px;
             color: #00314a;
             line-height: 28px;
@@ -159,3 +182,170 @@
     }
 }
 // About section end
+
+
+// Schedule section start
+.schedule_section{
+    padding: 55px 0;
+    color: #fff;
+    .single_schedule{
+        background-color: #00314a;
+        padding: 20px 10px 30px;
+        transition: 0.4s;
+        &:hover {
+            box-shadow: 0px 6px 17px #000;
+            transform: translatey(-5px);
+        }
+        h4{
+            font-size: 25px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 300;
+        }
+        h3{
+            font-size: 25px;
+        }
+        a{
+            color: #003c5b;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #fff;
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 15px;
+            border: 1px solid transparent;
+            transition: all 0.4s;
+            &:hover{
+                color: #fff;
+                background-color: transparent;
+                border: 1px solid #fff;
+            }
+        }
+    }
+}
+// Schedule section end
+
+
+// Review section start
+.review_section{
+    background-color: #f4f7fe;
+    padding: 55px 0;
+    .patient{
+        .patient_img{
+            width: 120px;
+            height: 120px;
+            img{
+                box-shadow: 0px 0px 20px rgba(0,0,0,0.5)  
+            }
+        }
+        h4{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: #00314a;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        h5{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            color: #00314a;
+        }
+    }
+    .review{
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            color: #00314a;
+            font-style: italic;
+        }
+    }
+}
+// Review section end 
+
+
+// Counter section start
+.counter_section{
+    background-image: url(../img/Counter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 55px 0;
+    .single_counter{
+        i{
+            font-size: 65px;
+            margin-bottom: 15px;
+        }
+        h2{
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    }
+}
+// Counter section end
+
+
+// Blog section start
+.blog_section{
+    padding: 55px 0;
+    .single_blog{
+        background-color: #00314a;
+        color: #fff;
+        transition: all 0.4s;
+        &:hover {
+            box-shadow: 0px 6px 17px #000;
+            transform: scale(1);
+        }
+        .blog_info{
+            padding: 40px 30px 0;
+            position: relative;
+            .date{
+                width: 62px;
+                height: 54px;
+                background-color: #fff;
+                color: #003c5b;
+                position: absolute;
+                top: -25px;
+                span{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+            h2{
+                font-weight: 600;
+                font-size: 22px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: rgba(255,255,255,0.7);
+                margin-top: 15px;
+                margin-bottom: 30px;
+            }
+        }
+        .blog_footer{
+            padding: 0 30px;
+            p{
+                font-size: 18px;
+                line-height: 20px;
+                margin: 10px 0 20px !important;
+                i{
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 16px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+// Blog section end
